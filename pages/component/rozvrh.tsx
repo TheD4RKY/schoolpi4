@@ -1,3 +1,4 @@
+import React from "react";
 import dynamic from "next/dynamic";
 
 const PDFViewer = dynamic(() => import("./pdfviewer"), {
@@ -5,6 +6,6 @@ const PDFViewer = dynamic(() => import("./pdfviewer"), {
 });
 
 export default function PDF() {
-  return <PDFViewer />;
+  return (<PDFViewer />);
 }
 

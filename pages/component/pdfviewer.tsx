@@ -9,7 +9,7 @@ import workerSrc from "../../pdf-worker";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 export default function PDFViewer() {
-  const [file, setFile] = useState("./zaci.pdf");
+  const [file, setFile] = useState('./zaci.pdf');
   const [numPages, setNumPages] = useState(null);
 
   function onFileChange(event) {
