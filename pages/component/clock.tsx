@@ -7,3 +7,5 @@ export default function Clocks(){
     <Clock format={'HH:mm:ss'} ticking={true} timezone={'Europe/Prague'}/>
   );
   }
+
+  //pouzivam knihovnu na hodiny

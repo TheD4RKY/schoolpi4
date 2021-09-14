@@ -1,14 +1,10 @@
 import { useState } from "react";
-// import default react-pdf entry
 import { Document, Page, pdfjs } from "react-pdf";
-// import pdf worker as a url, see `next.config.js` and `pdf-worker.js`
 import workerSrc from "../../pdf-worker";
-
-
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
-export default function PDFViewer() {
+export default function Zaci() {
   const [file, setFile] = useState('./zaci.pdf');
   const [numPages, setNumPages] = useState(null);
 
@@ -22,10 +18,6 @@ export default function PDFViewer() {
 
   return (
     <div>
-      <div>
-        <label htmlFor="file">Load from file:</label>{" "}
-        <input onChange={onFileChange} type="file" />
-      </div>
       <div>
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from({ length: numPages }, (_, index) => (

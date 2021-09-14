@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+    "compilerOptions": {
     "target": "es5",
     "lib": [
       "dom",
@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    //"strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -18,15 +18,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "noImplicitAny": false,
-    "strict": false
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pdf-worker.js"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
   ]
 }

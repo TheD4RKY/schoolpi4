@@ -1,9 +1,9 @@
 import type { NextPage } from 'next';
 import Clocks from './component/clock';
-import Rozvrh from './component/rozvrh';
 import dynamic from 'next/dynamic';
+import Ucitele from './component/ucitele';
 
-const PDFViewer = dynamic(() => import('./component/pdfviewer'), {
+const Zaci = dynamic(() => import('./component/zaci'), {
   ssr: false
 });
 export default function index(){
@@ -11,7 +11,8 @@ export default function index(){
     <>
  <h1>Hello world</h1>
   <Clocks />
-  <Rozvrh />
+  <Zaci />
+  <Ucitele />
 </>
   );
 }
