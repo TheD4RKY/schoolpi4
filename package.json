@@ -9,18 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-live-clock": "^5.2.0",
+    "react-moment": "^1.1.1",
     "react-pdf": "^5.3.2"
   },
   "devDependencies": {
-    "file-loader": "^6.2.0",
     "@types/react": "17.0.20",
     "@types/react-pdf": "^5.0.6",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "file-loader": "^6.2.0",
     "typescript": "4.4.2"
   }
 }

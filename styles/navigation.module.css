@@ -1,0 +1,14 @@
+.navigation1 {
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  list-style: none;
+  background-color: grey;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=navigation.module.css.map */
