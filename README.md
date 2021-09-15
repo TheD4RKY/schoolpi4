@@ -4,9 +4,15 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## How to run this project in Web browser on local host
 
-First, run the development server:
+1] First things first install depenedencies
+```sudo yarn install
+```
+2] In this particular project make sure to have rule in tsconfig.json
+```strict:"false"
+```
+3] Run the development server:
 
 ```bash
 npm run dev
