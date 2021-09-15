@@ -7,10 +7,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## How to run this project in Web browser on local host
 
 1] First things first install depenedencies
-```sudo yarn install
+```bash
+sudo yarn install
 ```
 2] In this particular project make sure to have rule in tsconfig.json
-```strict:"false"
+```bash
+strict:"false"
 ```
 3] Run the development server:
 
