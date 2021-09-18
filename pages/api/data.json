@@ -1,0 +1,40 @@
+{
+    "stops": [
+        {
+            "stop": {
+                "id": 2588,
+                "number": 16345,
+                "zone": 640,
+                "fullName": "Klobouky u Brna, náměstí",
+                "chapsName": "Klobouky u Brna, náměstí",
+                "busStopSign": []
+            },
+            "signs": [
+                {
+                    "busStopSign": {
+                        "id": 5262,
+                        "busStopId": 2588,
+                        "number": 2,
+                        "description": "1; 109>Těšany, Brno",
+                        "coordinates": {
+                            "lng": 16.85736,
+                            "lat": 48.99538
+                        },
+                        "busStopSignBusStopTransportlink": [],
+                        "busStop": null
+                    },
+                    "departures": [
+                        {
+                            "link": "109",
+                            "destinationStop": "Brno, ÚAN Zvonařka",
+                            "time": "♿19:39",
+                            "isOnline": true
+                        }
+                    ]
+                }
+            ],
+            "infoText": []
+        }
+    ],
+    "news": ""
+}

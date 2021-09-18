@@ -10,7 +10,7 @@ export default function Navigation(){
                 <li className={Style.navigation1}>
                     <a href="../rozvrhyucitele">Rozvrh Ucitele</a></li>
                 <li className={Style.navigation1}>
-                    <a href="#">Jizdni rad</a></li>
+                    <a href="./jizdnirady">Jizdni rad</a></li>
                 <li className={Style.navigation1}>
                     <a href="#">Jidelnicek</a></li>
            </ul>
