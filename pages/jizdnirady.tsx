@@ -1,23 +1,37 @@
-import React, {useState, useEffect} from "react";
-
+import React from "react";
+import Style from '/styles/idos.module.css';
 export const getStaticProps = async () => {
     const res = await fetch('https://www.idsjmk.cz/api/departures/busstop-by-name?busStopName=Klobouky%20u%20Brna%2C%20n%C3%A1m%C4%9Bst%C3%AD');
     const data = await res.json();
-    var obj = res;
-    console.log(data.stops[0].stop.id);
+    var array = [];
+    array = data.stops[0].signs;
+    for(let init = 0;init < array.length; init++){
+        array[init];
+    }
     return {
-        props: { jeba: data}
+        props: { bus: array, 
+                  }
     }
 }
 
-const Idsjmk = ({ jeba }) => {
-        return (
-            <div>
 
-            <h1>Damn</h1>
-                <a><h1>{jeba.stops[0].stop.fullName}</h1></a>
-            </div>
-        );
-    }
+const Idsjmk = ({ bus }) => {
+    return (
+        <div>
+                {bus.map(businfo =>(
+                 <div key={businfo.signs}>
+                     <div className={Style.card}>
+                        <h1>Autobus #{bus.indexOf(businfo)}</h1>
+                        <h3>Jede do {businfo.departures[0].destinationStop}</h3>
+                        <h3>Jede přes {businfo.busStopSign.description}</h3>
+                        <h3>{businfo.departures[0].time}</h3>
+                     </div> 
+                     </div> 
+                )                    
+                    )}
+         </div>
+    );
+            
+}
 
 export default Idsjmk;
