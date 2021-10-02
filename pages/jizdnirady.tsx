@@ -17,18 +17,25 @@ export const getStaticProps = async () => {
 
 const Idsjmk = ({ bus }) => {
     return (
+        <div className={Style.back}>
+        <section className={Style.header}>
+                <h1 className={Style.htext}>
+                    Klobouky u Brna, Odjezdové jízdní řády
+                </h1>
+            </section>
         <div>
                 {bus.map(businfo =>(
                  <div key={businfo.signs}>
                      <div className={Style.card}>
                         <h1>Autobus #{bus.indexOf(businfo)}</h1>
                         <h3>Jede do {businfo.departures[0].destinationStop}</h3>
-                        <h3>Jede přes {businfo.busStopSign.description}</h3>
-                        <h3>{businfo.departures[0].time}</h3>
+                        <h3>Linka {businfo.busStopSign.description}</h3>
+                        <h3>Jede v {businfo.departures[0].time}</h3>
                      </div> 
                      </div> 
                 )                    
                     )}
+         </div>
          </div>
     );
             

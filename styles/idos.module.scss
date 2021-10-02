@@ -1,6 +1,21 @@
 .card{
-border: solid 1px black;
-width: 50%;
-display: inline-block;
+border: solid  1px black;
+margin: 1px;
+width: 49%;
+height: 20%;
 text-align: center;
+float: left;
+background-color: white;
+}
+.header{
+    height: 200px;
+    border: solid 1px black;
+}
+.htext{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.back{
+    background-image: linear-gradient(rgb(49, 16, 87));
 }
