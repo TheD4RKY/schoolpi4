@@ -1,4 +1,7 @@
 .clock {
-  color: white;
+  font-size: 20px;
+  color: red;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 /*# sourceMappingURL=clock.module.css.map */

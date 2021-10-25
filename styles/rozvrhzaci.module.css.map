@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAA;EACR,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAEX",
+    "sources": [
+        "rozvrhzaci.module.scss"
+    ],
+    "names": [],
+    "file": "rozvrhzaci.module.css"
+}

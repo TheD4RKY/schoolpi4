@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,KAAK;CACf",
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,GAAG;EACV,WAAW,EAAC,GAAG;EACf,YAAY,EAAC,GAAG;CACnB",
     "sources": [
         "clock.module.scss"
     ],

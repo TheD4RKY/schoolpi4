@@ -3,18 +3,18 @@ import Style from '/styles/navigation.module.css';
 export default function Navigation(){
     return(
         <>
-        <div className={Style.wrapper}>
-           <ul>
-                <li className={Style.navigation1}>
-                    <a href="../rozvrhyzaci">Rozvrh staly a zmeny</a></li>
-                <li className={Style.navigation1}>
-                    <a href="../rozvrhyucitele">Rozvrh Ucitele</a></li>
-                <li className={Style.navigation1}>
-                    <a href="./jizdnirady">Jizdni rad</a></li>
-                <li className={Style.navigation1}>
-                    <a href="#">Jidelnicek</a></li>
-           </ul>
-        </div>
+<div className={Style.wrapper}>
+    <div className={Style.navigation1}>
+        <a href="../rozvrhyzaci"><div className={Style.navigation2}>
+        Rozvrh staly a zmeny</div></a>
+        <a href="../rozvrhyzaci"><div className={Style.navigation2}>
+        Rozvrh Ucitele</div></a>
+        <a href="../jizdnirady"><div className={Style.navigation2}>
+        Jizdni rad</div></a>
+        <a href="../rozvrhyzaci"><div className={Style.navigation2}>
+        Jidelnicek</div></a>
+    </div>
+</div>
         </>
     );
 }

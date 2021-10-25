@@ -1,18 +1,45 @@
 .navigation1{
-width: 200%;
+width: 100%;
 height: 100%;
-display: list-item;
-list-style: none;
-background-color: grey;
-position: relative;
+background: rgb(255,75,157);
+background: linear-gradient(25deg, rgba(255,75,157,1) 16%, rgba(255,140,127,1) 49%, rgba(104,255,255,1) 100%);
 }
 
 
 .wrapper{
+    
     background-color: black;
+    z-index: -100;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     position: fixed;
+}
+
+.navigation2{
+    
+    text-align: center;
+    height: 25%;
+    transition: background 1s ease;
+    transition: 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    //background-color: rgb(130, 12, 36);
+&:hover{
+    //background-color: crimson;
+    background: rgba(216, 63, 135, .4);
+    text-align: center;
+    height: 30%;
+    animation: textflow 10s infinite;
+}}
+
+@keyframes textflow{
+0%{color: black;}
+50%{color: #ffffff;}
+100%{color: black;}
 }
