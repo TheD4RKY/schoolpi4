@@ -1,8 +1,9 @@
 .navigation1{
-width: 100%;
+width: auto;
 height: 100%;
-background: rgb(255,75,157);
-background: linear-gradient(25deg, rgba(255,75,157,1) 16%, rgba(255,140,127,1) 49%, rgba(104,255,255,1) 100%);
+background-color: black;
+padding-top: 10%;
+padding-right: 60%;
 }
 
 
@@ -15,31 +16,24 @@ background: linear-gradient(25deg, rgba(255,75,157,1) 16%, rgba(255,140,127,1) 4
     display: flex;
     justify-content: center;
     position: fixed;
+    
 }
 
 .navigation2{
-    
+    padding-right: 40%;
     text-align: center;
-    height: 25%;
+    width: auto;
+    height: 18%;
     transition: background 1s ease;
     transition: 0.6s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: 800;
-    color: black;
+    font-size: 90px;
+    font-weight: 600;
+    color: rgb(49, 49, 49);
     //background-color: rgb(130, 12, 36);
 &:hover{
     //background-color: crimson;
-    background: rgba(216, 63, 135, .4);
     text-align: center;
-    height: 30%;
-    animation: textflow 10s infinite;
+    color: #ffffff;
+    text-shadow: -10px 10px #212121;
 }}
 
-@keyframes textflow{
-0%{color: black;}
-50%{color: #ffffff;}
-100%{color: black;}
-}

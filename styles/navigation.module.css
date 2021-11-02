@@ -1,8 +1,9 @@
 .navigation1 {
-  width: 100%;
+  width: auto;
   height: 100%;
-  background: #ff4b9d;
-  background: linear-gradient(25deg, #ff4b9d 16%, #ff8c7f 49%, #68ffff 100%);
+  background-color: black;
+  padding-top: 10%;
+  padding-right: 60%;
 }
 
 .wrapper {
@@ -20,55 +21,22 @@
 }
 
 .navigation2 {
+  padding-right: 40%;
   text-align: center;
-  height: 25%;
+  width: auto;
+  height: 18%;
   -webkit-transition: background 1s ease;
   transition: background 1s ease;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 50px;
-  font-weight: 800;
-  color: black;
+  font-size: 90px;
+  font-weight: 600;
+  color: #313131;
 }
 
 .navigation2:hover {
-  background: rgba(216, 63, 135, 0.4);
   text-align: center;
-  height: 30%;
-  -webkit-animation: textflow 10s infinite;
-          animation: textflow 10s infinite;
-}
-
-@-webkit-keyframes textflow {
-  0% {
-    color: black;
-  }
-  50% {
-    color: #ffffff;
-  }
-  100% {
-    color: black;
-  }
-}
-
-@keyframes textflow {
-  0% {
-    color: black;
-  }
-  50% {
-    color: #ffffff;
-  }
-  100% {
-    color: black;
-  }
+  color: #ffffff;
+  text-shadow: -10px 10px #212121;
 }
 /*# sourceMappingURL=navigation.module.css.map */

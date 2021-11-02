@@ -5,8 +5,10 @@ import Navigation from './component/navigation';
 export default function index(){
   return (
     <>
+    <div>
   <Navigation/>
   <Clocks />
+</div>
 </>
   );
 }
