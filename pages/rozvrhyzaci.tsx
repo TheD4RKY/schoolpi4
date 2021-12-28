@@ -9,8 +9,8 @@ export default function Rozvrh(){
         ssr: false
     });
 return(
-<div>
+<>
         <Zaci />
-        </div>
+        </>
 );
 }

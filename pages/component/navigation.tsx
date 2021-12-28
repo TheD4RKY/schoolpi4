@@ -6,13 +6,13 @@ export default function Navigation(){
 <div className={Style.wrapper}>
     <div className={Style.navigation1}>
         <a href="../rozvrhyzaci"><div className={Style.navigation2}>
-        rozvrh_žák</div></a>
+        Rozvrh</div></a>
         <a href="../rozvrhyzaci"><div className={Style.navigation2}>
-        rozvrh_učitel</div></a>
+        Rozvrh</div></a>
         <a href="../jizdnirady"><div className={Style.navigation2}>
-        jízdní_řád</div></a>
+        Jízdní řád</div></a>
         <a href="../rozvrhyzaci"><div className={Style.navigation2}>
-        jídelní_lístek</div></a>
+        Jídelníček</div></a>
     </div>
 </div>
         </>

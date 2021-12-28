@@ -1,16 +1,14 @@
 .card{
-border: solid  1px black;
-margin: 1px;
-width: 49%;
-height: 20%;
 text-align: center;
-float: left;
+float: right;
 background-color: white;
+display: flex;
 }
 
 .header{
-    height: 200px;
-    border: solid 1px black;
+    grid-column: 1 / 9;
+    background-color: #553EA3;
+    
 }
 
 .htext{
@@ -19,5 +17,12 @@ background-color: white;
 }
 
 .back{
-    background-image: linear-gradient(rgb(49, 16, 87));
+    grid-column: 3 / 9;
+    grid-row: 2 / 9;
+    background-color: #8D86C9;
+    /*display: flex;
+    flex-direction: column;
+    width: 63.7%;
+    height: 100%;
+    float: right;*/
 }

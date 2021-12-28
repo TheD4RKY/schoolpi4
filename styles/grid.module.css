@@ -1,0 +1,12 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+}
+/*# sourceMappingURL=grid.module.css.map */

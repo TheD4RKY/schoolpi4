@@ -1,5 +1,7 @@
 import React from "react";
+import Navigation from "./component/navigation";
 import Style from '/styles/idos.module.css';
+import Grid from "/styles/grid.module.css";
 export const getStaticProps = async () => {
     const res = await fetch('https://www.idsjmk.cz/api/departures/busstop-by-name?busStopName=Klobouky%20u%20Brna%2C%20n%C3%A1m%C4%9Bst%C3%AD');
     const data = await res.json();
@@ -17,13 +19,14 @@ export const getStaticProps = async () => {
 
 const Idsjmk = ({ bus }) => {
     return (
+            <div className={Grid.grid}>
+        <Navigation />
+        <div className={Style.header}>
+
+
+        </div>
         <div className={Style.back}>
-        <section className={Style.header}>
-                <h1 className={Style.htext}>
-                    Klobouky u Brna, Odjezdové jízdní řády
-                </h1>
-            </section>
-        <div>
+            <div>
                 {bus.map(businfo =>(
                  <div key={businfo.signs}>
                      <div className={Style.card}>
@@ -35,8 +38,9 @@ const Idsjmk = ({ bus }) => {
                      </div> 
                 )                    
                     )}
+                    </div>
          </div>
-         </div>
+        </div>
     );
             
 }

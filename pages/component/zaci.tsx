@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs} from "react-pdf";
 import workerSrc from "../../pdf-worker";
 import Style from '/styles/rozvrhzaci.module.css';
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+
 
 export default function Zaci() {
   const [file, setFile] = useState('./zaci.pdf');
@@ -23,6 +24,7 @@ export default function Zaci() {
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from({ length: numPages }, (_, index) => (
             <Page
+              className={Style.funguj}
               key={`page_${index + 1}`}
               pageNumber={index + 1}
               renderAnnotationLayer={false}
