@@ -26,16 +26,18 @@ const Idsjmk = ({ bus }) => {
         <div className={Style.header}>
         
         <div><Clocks/></div>
-                <div className={Style.logo}>
-                    <Image
-                        src={"/logo.png"}
-                        alt="MeSOS logo"
-                        width={"210px"}
-                        height={"60px"}
-                    />
-             </div>
         </div>
-            
+            <div className={Style.logo}>
+                <div className={Style.logoflex}>
+                <Image
+                    src={"/logo.png"}
+                    alt="MeSOS logo"
+                    width={"210px"}
+                    height={"60px"}
+                />
+                </div>
+            </div>
+            <div className={Style.adminpanel}></div>
         <div className={Style.back}>
             <div>
                 {bus.map(businfo =>(
