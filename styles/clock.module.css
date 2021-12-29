@@ -1,13 +1,12 @@
 .clock {
-  font-size: 80px;
+  font-size: 5rem;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 0.18em;
 }
 /*# sourceMappingURL=clock.module.css.map */

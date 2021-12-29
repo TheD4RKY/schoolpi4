@@ -1,15 +1,13 @@
 import React from 'react';
 import Clocks from './component/clock';
 import Navigation from './component/navigation';
-import Style from "/styles/grid.module.css";
+import Uppernav from './component/nav';
+import Grid from "/styles/grid.module.css";
 
 export default function index(){
   return (
-    <div className={Style.grid}>
-
-  <Navigation/>
-  <Clocks />
-
+    <div className={Grid.grid}>
+      <Uppernav /> 
 </div>
   );
 }

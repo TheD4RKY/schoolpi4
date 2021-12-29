@@ -1,10 +1,18 @@
 .wrapper{
-background-color: black;
 width: 100%;
 height: 100%;
-
+grid-row: 2 / 9;
+grid-column: 3 / 6;
+background-color: #8D86C9;
 }
 .funguj{
- background-color: black;
-
+display: flex;
+justify-content: center;
+max-height: 0px;
+margin-top: 1em;
+}
+.wrapperalt{
+    grid-column: 6 / 9;
+    grid-row: 2 / 9;
+    background-color: #8D86C9;
 }

@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import workerSrc from "../../pdf-worker";
-
+import Style from "/styles/rozvrhzaci.module.css";
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+import 'react-pdf/dist/umd/Page/AnnotationLayer.css';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+
 
 export default function Ucitele() {
   const [file, setFile] = useState('./ucitele.pdf');
@@ -14,22 +17,22 @@ export default function Ucitele() {
 
   function onDocumentLoadSuccess({ numPages: nextNumPages }) {
     setNumPages(nextNumPages);
+  
   }
 
   return (
-    <div>
-      <div>
-        <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-          {Array.from({ length: numPages }, (_, index) => (
+      <div className={Style.wrapperalt}>
+      <Document file={file} onLoadSuccess={onDocumentLoadSuccess}
+        renderMode="canvas"
+         >
             <Page
-              key={`page_${index + 1}`}
-              pageNumber={index + 1}
+              className={Style.funguj}
+              pageNumber={1}
               renderAnnotationLayer={false}
               renderTextLayer={false}
+              width={550}
             />
-          ))}
         </Document>
       </div>
-    </div>
   );
 }

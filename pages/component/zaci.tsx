@@ -3,7 +3,8 @@ import { Document, Page, pdfjs} from "react-pdf";
 import workerSrc from "../../pdf-worker";
 import Style from '/styles/rozvrhzaci.module.css';
 pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
-
+import Grid from "/styles/grid.module.css";
+import Uppernav from "./nav";
 
 export default function Zaci() {
   const [file, setFile] = useState('./zaci.pdf');
@@ -19,8 +20,8 @@ export default function Zaci() {
 
   return (
 
-     <div className={Style.wrapper}>
-      <div className={Style.pdfwrapper}>
+
+      <div className={Style.wrapper}>
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from({ length: numPages }, (_, index) => (
             <Page
@@ -29,11 +30,12 @@ export default function Zaci() {
               pageNumber={index + 1}
               renderAnnotationLayer={false}
               renderTextLayer={false}
+              width={550}
             />
           ))}
         </Document>
         </div>
-    </div>
+  
   
   );
 }

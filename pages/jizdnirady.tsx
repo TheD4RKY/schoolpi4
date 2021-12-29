@@ -5,12 +5,13 @@ import Style from '/styles/idos.module.css';
 import Grid from "/styles/grid.module.css";
 import Clocks from "./component/clock";
 import { setInternalBufferSize } from "bson";
+import Uppernav from "./component/nav";
 export const getStaticProps = async () => {
     const res = await fetch('https://www.idsjmk.cz/api/departures/busstop-by-name?busStopName=Klobouky%20u%20Brna%2C%20n%C3%A1m%C4%9Bst%C3%AD');
     const data = await res.json();
     var array = [];
     var number;
-    const Style1 = {
+    /* const Style1 = {
         gridColumnStart: 1,
         gridColumnEnd: 2,
         color: "white",
@@ -24,7 +25,7 @@ export const getStaticProps = async () => {
         gridColumnStart: 3,
         gridColumnEnd: 4,    
         color: "white",
-    };
+    }; */
     array = data.stops[0].signs;
     for(var init = 0;init < array.length; init++){
         array[init];
@@ -35,10 +36,10 @@ export const getStaticProps = async () => {
     console.log(array.length);
     return {
         props: { bus: array, 
-                  Style1: Style1,
+/*                  Style1: Style1,
             Style2: Style2,
             Style3: Style3,
-            number: number,
+*/            number: number,
                 }
     }
 }
@@ -47,21 +48,7 @@ export const getStaticProps = async () => {
 const Idsjmk = ({ bus, Style1, Style2, Style3, number }) => {
     return (
             <div className={Grid.grid}>
-        <Navigation />
-        <div className={Style.header}>
-        
-        <div><Clocks/></div>
-        </div>
-            <div className={Style.logo}>
-                <div className={Style.logoflex}>
-                <Image
-                    src={"/logo.png"}
-                    alt="MeSOS logo"
-                    width={"210px"}
-                    height={"60px"}
-                />
-                </div>
-            </div>
+            <Uppernav />
             <div className={Style.adminpanel}></div>
             <div className={Style.back}>
             {bus.map(businfo => (
@@ -78,7 +65,7 @@ const Idsjmk = ({ bus, Style1, Style2, Style3, number }) => {
                 )                    
                     )}
          </div>
-         </div>
+       </div>
         
     );
             
