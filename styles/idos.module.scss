@@ -1,10 +1,19 @@
 .card{
-text-align: center;
-float: right;
-background-color: white;
+width: 100%;
 display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+margin-top: 2rem;
 }
+.cardh1{
+    font-size: 2em;
 
+}
+.cardh3{
+    font-size: 2em;
+
+}
 .header{
     grid-column: 3 / 7;
     background-color: #553EA3;
@@ -29,9 +38,16 @@ background-color: #553EA3;
     align-self: flex-end;
 }
 .back{
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);*/
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     grid-column: 3 / 9;
     grid-row: 2 / 9;
     background-color: #8D86C9;
+    height: 100%;
     /*display: flex;
     flex-direction: column;
     width: 63.7%;
