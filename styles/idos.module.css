@@ -19,6 +19,16 @@
   margin-top: 4%;
 }
 
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  background-color: black;
+}
+
 .back {
   -ms-grid-column: 3;
   -ms-grid-column-span: 6;

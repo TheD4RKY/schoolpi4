@@ -1,7 +1,9 @@
 import React from "react";
+import Image from 'next/image';
 import Navigation from "./component/navigation";
 import Style from '/styles/idos.module.css';
 import Grid from "/styles/grid.module.css";
+import Clocks from "./component/clock";
 export const getStaticProps = async () => {
     const res = await fetch('https://www.idsjmk.cz/api/departures/busstop-by-name?busStopName=Klobouky%20u%20Brna%2C%20n%C3%A1m%C4%9Bst%C3%AD');
     const data = await res.json();
@@ -22,9 +24,18 @@ const Idsjmk = ({ bus }) => {
             <div className={Grid.grid}>
         <Navigation />
         <div className={Style.header}>
-
-
+        
+        <div><Clocks/></div>
+                <div className={Style.logo}>
+                    <Image
+                        src={"/logo.png"}
+                        alt="MeSOS logo"
+                        width={"210px"}
+                        height={"60px"}
+                    />
+             </div>
         </div>
+            
         <div className={Style.back}>
             <div>
                 {bus.map(businfo =>(
