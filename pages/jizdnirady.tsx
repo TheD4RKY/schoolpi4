@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image';
-import Navigation from "./component/navigation";
+
 import Style from '/styles/idos.module.css';
 import Grid from "/styles/grid.module.css";
 import Clocks from "./component/clock";

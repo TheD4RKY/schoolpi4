@@ -1,13 +1,28 @@
 import React from "react";
-import Navigation from "./navigation";
 import Clocks from "./clock";
 import Image from "next/dist/client/image";
 import Grid from "/styles/grid.module.css";
-
+import Style from '/styles/navigation.module.css';
+import Link from 'next/link';
 export default function Uppernav(){
+    const DarkMode = {}
+    const LightMode = {}
+    const Default = {}
 return(
 <>
-        <Navigation />
+        <div className={Style.wrapper}>
+            <div className={Style.navigation1}>
+                <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
+                    Rozvrh</div></Link>
+                <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
+                    Funny</div></Link>
+                <Link href="../jizdnirady"><div className={Style.navigation2}>
+                    Jízdní řád</div></Link>
+                <Link href="../jidelnicek"><div className={Style.navigation2}>
+                    Jídelníček</div></Link>
+            </div>
+        </div>
+        
         <div className={Grid.header}>
 
             <div><Clocks /></div>
