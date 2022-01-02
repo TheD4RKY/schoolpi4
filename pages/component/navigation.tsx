@@ -9,7 +9,7 @@ export default function Navigation(){
         <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
         Rozvrh</div></Link>
         <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
-        Rozvrh</div></Link>
+        Funny</div></Link>
         <Link href="../jizdnirady"><div className={Style.navigation2}>
         Jízdní řád</div></Link>
         <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
