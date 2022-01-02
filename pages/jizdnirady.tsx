@@ -45,15 +45,20 @@ const Idsjmk = ({ bus }) => {
             <Uppernav />
             <div className={Style.adminpanel}></div>
             <div className={Style.back}>
+            <div style={{ flexDirection: "row", display: "flex" }}>
+                    <div className={Style.card}><h1>Linka</h1></div>
+                    <div className={Style.card}><h1>Cílová stanice</h1></div>
+                    <div className={Style.card}><h1>Čas odjezdu</h1></div>
+            </div>
             {bus.map(businfo => (
             <div key={businfo.signs} style={{ flexDirection: "row", display: "flex"}}>
                     <div className={Style.card} /*style={Style1, { gridRowStart: number, gridRowEnd: 2,}} key={businfo.signs}*/>
-                            <h1 className={Style.cardh1}>Linka {businfo.departures[0].link}</h1>
+                            <h1 className={Style.cardh1}>{businfo.departures[0].link}</h1>
                         </div>
                     <div className={Style.card} /*style={Style2, { gridRowStart:  number, gridRowEnd: 2, }}*/ >
-                            <h1 className={Style.cardh1}>Jede do {businfo.departures[0].destinationStop}</h1>
+                            <h1 className={Style.cardh1}>{businfo.departures[0].destinationStop}</h1>
                     </div><div className={Style.card} /*style={Style3, { gridRowStart: number, gridRowEnd: 2 ,}}*/>
-                            <h1 className={Style.cardh1}>Jede v {businfo.departures[0].time}</h1>
+                            <h1 className={Style.cardh1}>{businfo.departures[0].time}</h1>
                      </div> 
                      </div> 
                 )                    
