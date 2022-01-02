@@ -12,7 +12,7 @@ export default function Navigation(){
         Funny</div></Link>
         <Link href="../jizdnirady"><div className={Style.navigation2}>
         Jízdní řád</div></Link>
-        <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
+        <Link href="../jidelnicek"><div className={Style.navigation2}>
         Jídelníček</div></Link>
     </div>
 </div>

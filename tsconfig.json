@@ -22,7 +22,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "pages/jizdnirady.tsx",
+    "**/*.tsx", "pages/jizdnirady.tsx", "pages/component/jidlo.js",
   ],
   "exclude": [
     "node_modules",
