@@ -4,13 +4,20 @@ import Image from "next/dist/client/image";
 import Grid from "/styles/grid.module.css";
 import Style from '/styles/navigation.module.css';
 import Link from 'next/link';
+
 export default function Uppernav(){
-    const DarkMode = {}
-    const LightMode = {}
-    const Default = {}
+    const DarkMode = {
+        backgroundColor: "#212121"
+    }
+    const LightMode = {
+        backgroundColor: "#FAFAFA"
+    }
+    const defaultmode = {
+        backgroundColor: "#725AC1"
+    }
 return(
 <>
-        <div className={Style.wrapper}>
+        <div className={Style.wrapper} style={defaultmode}>
             <div className={Style.navigation1}>
                 <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
                     Rozvrh</div></Link>
