@@ -15,9 +15,13 @@ export default function Uppernav(){
     const defaultmode = {
         backgroundColor: "#725AC1"
     }
+    const handleClick = (defaultmode, LightMode, DarkMode) => {
+        var leftnav = defaultmode; 
+    return{ leftnav }
+}
 return(
 <>
-        <div className={Style.wrapper} style={defaultmode}>
+        <div className={Style.wrapper} style={leftnav}>
             <div className={Style.navigation1}>
                 <Link href="../rozvrhyzaci"><div className={Style.navigation2}>
                     Rozvrh</div></Link>
@@ -44,7 +48,11 @@ return(
                 />
             </div>
         </div>
-        <div className={Grid.adminpanel}></div>
+        <div className={Grid.adminpanel}>
+        <button onClick={colorchange}>Dark</button>
+        <button>Default</button>
+        <button>Light</button>
+        </div>
         </>
 )
 }
